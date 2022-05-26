@@ -1,0 +1,88 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+    background-color: var(--Desaturated-blue);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 340px;
+    height: 500px;
+    border-radius: 1.5rem;
+    background-color: var(--Very-pale-blue);
+    overflow: hidden;
+}
+
+.header img {
+    width: 100%;
+}
+.body {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 62%;
+    text-align: center;
+}
+.body__title {
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+.body__text {
+    color: var(--Desaturated-blue);
+}
+.body__card {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Pale-blue);
+    border-radius: 0.8rem;
+    padding: 1rem 0;
+}
+.body__card-left {
+    display: flex;
+}
+.card__description h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.card__ancla {
+    color: var(--Bright-blue);
+}
+.body__button {
+    border: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    width: 100%;
+    padding: 1.5rem 0;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.3rem 1rem 0 var(--Bright-blue);
+    cursor: pointer;
+}
+.body__ancla {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    font-weight: 600;
+}
